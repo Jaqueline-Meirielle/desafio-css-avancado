@@ -1,0 +1,148 @@
+body {
+    background: url(../images/bg-desktop.svg) center center no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    padding: 45px 0 60px 50px;
+}
+
+img.img-logo {
+    width: 250px;
+    height: 55px;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "conteudo-principal conteudo";
+    grid-template-columns: 700px 1fr;
+    grid-template-rows: 400px;
+}
+.conteudo-principal {
+    grid-area: conteudo-principal;
+}
+div.image-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-principal {
+    display: block;
+    width: 80%;
+}
+.conteudo {
+    grid-area: conteudo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    width: 90%;
+}
+.titulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+.text-info {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.botao {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(257, 40%, 49%);
+    padding: 10px 45px;
+    border-radius: 20px;
+    margin-bottom: 90px;
+    background-color: white;
+}
+.botao:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+.footer .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 60px 0 0;
+    color: white;
+}
+.footer .social a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 15px;
+    width: 16px;
+    height: 16px;
+    border: solid 1px;
+    margin: 7px;
+    color: white;
+}
+.footer .social a i:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+@media(max-width:1000px) {
+    body {
+        background: url(../images/bg-mobile.svg) center center no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+    }
+    .logo {
+        display: flex;
+        flex-direction: row;
+        padding: 30px 0 50px 25px;
+    }
+    img.img-logo {
+        width: 200px;
+        height: 40px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.image-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo {
+        font-size: 25px;
+        text-align: center;
+    }
+    .text-info {
+        font-size: 16px;
+        text-align: center;
+    }
+    .botao {
+        margin-bottom: 30px;
+    }
+    .footer .social {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    
+}
+
